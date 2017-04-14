@@ -1,0 +1,20 @@
+{
+  "name": "simpletimer",
+  "version": "0.0.1",
+  "description": "ToDo list application built using Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+      "appId": "com.github.DarFig.SimpleTimer",
+      "productName": "NucelarToDOList"
+  },
+  "author": "Dariel https://github.com/DarFig",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "^1.6.2"
+  }
+}
