@@ -73,7 +73,6 @@ function completeItem() {
   var parent = item.parentNode;
   var id = parent.id;
   var value = item.innerText;
-  console.log(value);
   if (id === 'tarea') {
     data.lista.splice(data.lista.indexOf(value), 1);
     data.completado.push(value);
@@ -85,7 +84,8 @@ function completeItem() {
 
   // Comprueba si el elemento debe agregarse a la lista de completas o volver a agregarse a la lista de tareas
   var target = (id === 'tarea') ? document.getElementById('tareaCompletada'):document.getElementById('tarea');
-
+  location.reload();//esta linea recarga la pag por un bug de renderizado
+                    //buscar otra manera de solucionarlo
   parent.removeChild(item);
   target.insertBefore(item, target.childNodes[0]);
 
@@ -94,6 +94,7 @@ function completeItem() {
 // Añade un nuevo elemento a la lista de tareas
 function addItemToDOM(text, completed) {
   var list = (completed) ? document.getElementById('tareaCompletada'):document.getElementById('tarea');
+
   var item = document.createElement('li');
   item.innerText = text;
 
