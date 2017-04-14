@@ -3,11 +3,23 @@
     <head>
         <meta charset="utf-8">
         <title>NucelarToDoList</title>
-        <script type="text/javascript" src="func.js"></script>
+
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
+        <header>
+            <input type="text" placeholder="Something to do..." id="entrada">
+            <button id="intro">Intro</button>
+        </header>
+        <div class="container">
+			<ul class="tarea letter" id="tarea"></ul>
+            <div class="line">
+                _________
+            </div>
+            <ul class="tarea letter" id="tareaCompletada"></ul>
 
+		</div>
+        <script type="text/javascript" src="./func.js"></script>
     </body>
 </html>

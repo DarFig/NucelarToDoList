@@ -20,4 +20,4 @@ and use: build -<option>
 
 
 #### Others
-    [License]()
+    [License](https://github.com/DarFig/NucelarToDoList/blob/master/LICENSE)
