@@ -12,7 +12,7 @@ This is a simple ToDo list application built using Electron.
 ## Package and Installer
     - Asar: npm install -g asar
     - Electron-builder: npm install -g electron-builder
-and use: build -<option>
+    and use: build -<option>
     - -w --windows
     - -l --linux
     - -m --mac
@@ -20,5 +20,4 @@ and use: build -<option>
 
 
 #### Others
-
-[License](https://github.com/DarFig/NucelarToDoList/blob/master/LICENSE)
+![License](https://github.com/DarFig/NucelarToDoList/blob/master/LICENSE)
