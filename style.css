@@ -61,12 +61,22 @@
         float: left;
         padding: 30px;
     }
+    .subcontainer{
+        width: 90%;
+        float: left;
+        padding: 30px;
+        background:#a5d6a7;
+    }
     .line{
         font-family: 'Indie Flower', cursive;
         font-size: 30px;
         color:#1b5e20;
     }
     .letter{
+        color:#616161;
+    }
+    .lett{
+        font-size: 30px;
         color:#616161;
     }
     ul.tarea{
