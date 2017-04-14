@@ -1,5 +1,5 @@
 {
-  "name": "simpletimer",
+  "name": "NucelarToDOList",
   "version": "0.0.1",
   "description": "ToDo list application built using Electron",
   "main": "main.js",
