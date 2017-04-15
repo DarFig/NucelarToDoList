@@ -11,7 +11,6 @@ document.getElementById('intro').addEventListener('click', function() {
   if (value) {
     addItem(value);
   }
-
 });
 
 document.getElementById('entrada').addEventListener('keydown', function (e) {
@@ -76,6 +75,7 @@ function completeItem() {
   if (id === 'tarea') {
     data.lista.splice(data.lista.indexOf(value), 1);
     data.completado.push(value);
+
   } else {
     data.completado.splice(data.completado.indexOf(value), 1);
     data.lista.push(value);
@@ -84,8 +84,29 @@ function completeItem() {
 
   // Comprueba si el elemento debe agregarse a la lista de completas o volver a agregarse a la lista de tareas
   var target = (id === 'tarea') ? document.getElementById('tareaCompletada'):document.getElementById('tarea');
-  location.reload();//esta linea recarga la pag por un bug de renderizado
-                    //buscar otra manera de solucionarlo
+
+
+  //**add buttons
+  var buttons = document.createElement('div');
+  buttons.classList.add('buttons');
+
+  var remove = document.createElement('button');
+  remove.classList.add('remove');
+  remove.innerHTML = "Delete";
+
+  remove.addEventListener('click', removeItem);
+
+  var complete = document.createElement('button');
+  complete.classList.add('complete');
+  complete.innerHTML = "Done";
+
+
+  complete.addEventListener('click', completeItem);
+
+  buttons.appendChild(remove);
+  buttons.appendChild(complete);
+  item.appendChild(buttons);
+  //**
   parent.removeChild(item);
   target.insertBefore(item, target.childNodes[0]);
 
