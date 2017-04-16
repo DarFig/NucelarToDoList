@@ -4,107 +4,39 @@
 
     }
     header {
-        width:96%;
-        height:80px;
-        position:fixed;
-        padding:2%;
-        top:0;
-        left:0;
-        z-index:5;
-        background:#4caf50;
-        box-shadow:0px 2px 4px rgba(44, 62, 80, 0.15);
-        border-bottom-right-radius:5%;
-        border-bottom-left-radius:5%;
+        width:96%;height:80px;position:fixed;padding:2%;top:0;left:0;z-index:5;background:#4caf50;box-shadow:0px 2px 4px rgba(44, 62, 80, 0.15); border-bottom-right-radius:5%;border-bottom-left-radius:5%;
     }
-    header input{
-        width: 80%;
-        height: 60px;
-        float: left;
-        color:#000;
-        font-size: 15px;
-        font-weight: 400;
-        text-indent: 18px;
-        padding: 0 70px 0 0;
-        background:#e8f5e9;
-        border-radius: 5px 25px 25px 5px;
-        border: 0px;
-        box-shadow: none;
-        outline: none;
-        font-size: 30px;
+    header input{width: 80%; height: 60px; float: left; color:#000;font-size: 15px;font-weight: 400;text-indent: 18px;padding: 0 70px 0 0;  background:#e8f5e9;border-radius: 5px 25px 25px 5px;
+        border: 0px;box-shadow: none; outline: none; font-size: 30px;
 
     }
     header button{
-        width: 50px;
-        height: 50px;
-
-        position:absolute;
-        top:15px;
-        right:15px;
-        z-index:2;
-
-        border-radius: 25px;
-        background: #fff;
-        border: 0px;
-        box-shadow: none;
-        outline: none;
-        cursor: pointer;
-
-        font-size: 20px;
+        width: 50px; height: 50px;  position:absolute;  top:15px;right:15px; z-index:2;  border-radius: 25px;  background: #fff;border: 0px;box-shadow: none;outline: none; cursor: pointer;font-size: 20px;
     }
     body{
-        background: #c8e6c9;
-        padding: 80px 0 0 0;
-
+        background: #c8e6c9; padding: 80px 0 0 0;
     }
     .container{
-        width: 96%;
-        float: left;
-        padding: 30px;
+        width: 96%; float: left; padding: 30px;
     }
-    .subcontainer{
-        width: 90%;
-        float: left;
-        padding: 30px;
-        background:#a5d6a7;
+    .subcontainer{  width: 90%; float: left;  padding: 30px;  background:#a5d6a7;
     }
     .line{
-        font-family: 'Indie Flower', cursive;
-        font-size: 30px;
-        color:#1b5e20;
+        font-family: 'Indie Flower', cursive; font-size: 30px; color:#1b5e20;
     }
     .letter{
         color:#616161;
     }
     .lett{
-        font-size: 30px;
-        color:#616161;
+        font-size: 30px; color:#616161;
     }
     ul.tarea{
-        width:96%;
-        float: left;
-
+        width:96%; float: left;
     }
     ul.tarea li{
-        width: 96%;
-        height: 80px;
-        float: left;
-        background: #e8f5e9;
-        position: relative;
-        border-radius: 2%;
-        box-shadow:0px 2px 4px rgba(44, 62, 80, 0.15);
-        margin: 0 0 10px;
+        width: 96%;  height: 80px; float: left; background: #e8f5e9; position: relative; border-radius: 2%;  box-shadow:0px 2px 4px rgba(44, 62, 80, 0.15);margin: 0 0 10px;
 
     }
     li button {
-        width: 60px;
-        height: 60px;
-
-        float: right;
-
-        border-radius: 25px;
-        background: #fff;
-        border: 0px;
-        margin: 2px;
-        font-size: 15px;
-        color:#1b5e20;
+        width: 60px;  height: 60px; float: right;border-radius: 25px;  background: #fff;  border: 0px;margin: 2px;font-size: 15px;color:#1b5e20;
     }

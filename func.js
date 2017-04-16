@@ -37,11 +37,10 @@ function renderizarLista() {
     addItemToDOM(value);
   }
 
-  for (var j = 0; j < data.completado.length; j++) {
+  /*for (var j = 0; j < data.completado.length; j++) {
     var value = data.completado[j];
     addItemToDOM(value, true);
-
-  }
+    }*/
 }
 
 function dataObjectUpdated() {
@@ -96,15 +95,15 @@ function completeItem() {
 
   remove.addEventListener('click', removeItem);
 
-  var complete = document.createElement('button');
-  complete.classList.add('complete');
-  complete.innerHTML = "Done";
+  //var complete = document.createElement('button');
+  //complete.classList.add('complete');
+  //complete.innerHTML = "Done";
 
 
-  complete.addEventListener('click', completeItem);
+  //complete.addEventListener('click', completeItem);
 
   buttons.appendChild(remove);
-  buttons.appendChild(complete);
+  //buttons.appendChild(complete);
   item.appendChild(buttons);
   //**
   parent.removeChild(item);
@@ -128,15 +127,15 @@ function addItemToDOM(text, completed) {
 
   remove.addEventListener('click', removeItem);
 
-  var complete = document.createElement('button');
-  complete.classList.add('complete');
-  complete.innerHTML = "Done";
+ // var complete = document.createElement('button');
+ // complete.classList.add('complete');
+ // complete.innerHTML = "Done";
 
 
-  complete.addEventListener('click', completeItem);
+  //complete.addEventListener('click', completeItem);
 
   buttons.appendChild(remove);
-  buttons.appendChild(complete);
+ // buttons.appendChild(complete);
   item.appendChild(buttons);
 
   list.insertBefore(item, list.childNodes[0]);
